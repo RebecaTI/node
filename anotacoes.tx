@@ -1,9 +1,0 @@
-const server = createServer((request, response) => 
-  request => Serve para obter dados da requisição que o usuario ta fazendo p meu servidor http. 
-Ou seja o request trás informações da requição que esta sendo feita pra dentro da minha API
-
-  response => É o objeto que eu vou utilizar pra devolver uma resposta pra quem está chamando minha API
-
-  response.end() => Encerra a resposta. Pode também mandar o último pedaço de dados.
-
-  response.write() => Envia dados, mas mantém a resposta aberta.
