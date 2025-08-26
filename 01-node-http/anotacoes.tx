@@ -1,0 +1,24 @@
+Principais métodos: 
+    GET => indica intenção de leitura ou obtenção de dados
+    POST => Indica intenção de envio de dados, seja para persistência ou outros fins
+    PUT/PATCH => Indica intenção de atualização ou correção de dados no servidor
+    DELETE => Indica intenção de exclusão de dados no servidor
+
+
+response.writeHead()
+  Ele permite q eu set os headers ou seja o cabeçalho da resposta q vai ser devolvida 
+
+codigos:
+  200 => Indica q td deu certo
+
+response.write()
+  Significa q eu ja estou escrevendo na propria resposta 
+
+response.end()
+  Significa q n tem mais nenhum dado a ser escrito naquela string q vc esta finalizando ela 
+
+server.listen()
+  É o metodo p gente ficar ouvindo. Pq ficar ouvindo?
+  Pq quando vc inicia um servidor vc indica uma porta p ele funcionar .
+  Pra ter a aplicação rodando temos q especificar em ql porta ela vai estar rodando
+  IMPORTANTE: Não pode colocar em portas conflitantes, ou seja, em portas q já tem uma aplicação funcionando
