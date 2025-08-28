@@ -1,0 +1,6 @@
+Crie aplicação 
+*Pagina inicial para cadastro na newsletter
+*Página de suceso para a qual o usuário será direcionado após se cadastrar
+*Pagina para visualizar a lista de todos os cadastrados
+
+Desafio extra: Crie na página de visualização dos e-mails cadastrados um botão que permite excluir um e-mail de lista

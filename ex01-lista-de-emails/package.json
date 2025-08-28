@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "name": "ex01-lista-de-emails",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

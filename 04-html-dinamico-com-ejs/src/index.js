@@ -3,8 +3,14 @@ const path = require('node:path')
 
 const app = express()
 
+const storedUsers = []
+
+// configuração do EJS
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
+
+//configuração do body
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
   const title = "Homepage"
@@ -13,8 +19,24 @@ app.get('/', (req, res) => {
   res.render('index', { title, message })
 })
 
-const PORT = 3000
+app.get('/formulario', (req, res) => {
+  res.render('form')
+})
 
+app.post('/register', (req, res) => {
+  const username = req.body.username
+  const password = req.body.password
+
+  storedUsers.push({ username, password })
+
+  res.redirect('/usuarios')
+})
+
+app.get('/usuarios', (req, res) => {
+  res.render('users', { users: storedUsers })
+})
+
+const PORT = 3000
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`)
 })
